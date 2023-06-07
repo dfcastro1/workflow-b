@@ -7,13 +7,13 @@ on:
 
 jobs:
   call-workflow:
-    uses: dfcastro1/workflow-a/.github/workflows/work.yml@v1
+    uses: dfcastro1/workflow-a/.github/workflows/work.yml
 
   call-workflow-passing-data:
     permissions:
       contents: read
       pull-requests: write
-    uses: octo-org/example-repo/.github/workflows/workflow-B.yml@main
+    uses: dfcastro1/workflow-a/.github/workflows/work.yml
     with:
       config-path: .github/labeler.yml
     secrets:
